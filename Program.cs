@@ -11,6 +11,8 @@ builder.Services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<App
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+Console.WriteLine(" Aplicación iniciada correctamente. Escuchando peticiones...");
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
